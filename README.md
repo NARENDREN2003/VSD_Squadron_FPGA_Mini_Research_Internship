@@ -34,11 +34,11 @@ This repository contains **five FPGA-based projects**, each focusing on differen
 
 After installing the required tools, **clone this repository**:
 
-    git clone https://github.com/Skandakm29/vsd_sqaudron_mini_fpga.git
+    git clone https://github.com/NARENDREN2003/VSD_Squadron_FPGA_Mini_Research_Internship.git
 
 Navigate into the repository:
 
-    cd vsd_sqaudron_mini_fpga
+    cd VSD_Squadron_FPGA_Mini_Research_Internship
 
 ***
 
@@ -50,7 +50,7 @@ Each project has its own directory. Navigate to the project you want to work on:
 Example:
 
     
-    cd VsdSquadron_mini_fpga_uart_loopback
+    cd TASK_1_RGB_CONTROL
 
 To view available files:
 
