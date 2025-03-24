@@ -24,7 +24,7 @@ This repository contains **five FPGA-based projects**, each focusing on differen
 
 |  | Project Name                                         | Description |
 |----|------------------------------------------------------|-------------|
-| 1 | [RGB CONTROL]()                  | FPGA RGB CONTROL TEST |
+| 1 | [RGB CONTROL](https://github.com/NARENDREN2003/VSD_Squadron_FPGA_Mini_Research_Internship/tree/main/TASK_1_RGB_CONTROL)                  | FPGA RGB CONTROL TEST |
 
 
 ---
