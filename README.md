@@ -1,1 +1,1 @@
-# VSD_Squadron_FPGA_Mini_Research_Internship
+# VSD_Squadron_FPGA_Mini_Research_Internship_2025
