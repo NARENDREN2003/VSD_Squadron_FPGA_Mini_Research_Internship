@@ -10,9 +10,9 @@ This task gives the idea of using gpio from the FPGA Board
 |Clone this repository using below command| ``` git clone https://github.com/NARENDREN2003/VSD_Squadron_FPGA_Mini_Research_Internship ```|
 |Navigate into the repository|```cd VSD_Squadron_FPGA_Mini_Research_Internship```|
 |Navigate into the folders in the repo|```cd TASK_1_LED_BLUE```|
-|To view available files|```ls```|
+|Navigate to Led Blue folder|```cd LED_BLUE```| 
 |Clean Previous Builds|```sudo make clean```|
-|Execute below command to build the FPGA|```sudo make build```
+|Execute below command to build the FPGA|```sudo make build```|
 |Flash the FPGA|```sudo make flash```|
 ## PCF File Mapping with FPGA Board
 ### PCF File
