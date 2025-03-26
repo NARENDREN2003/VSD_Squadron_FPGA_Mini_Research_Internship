@@ -22,7 +22,10 @@ This task gives the idea of using gpio from the FPGA Board
     set_io  hw_clk 20
     set_io  testwire 17
 Referring to VSD Squadron FPGA Mini Datasheet.We could understand the PCF File.
-![image]()
+
+![image](https://github.com/NARENDREN2003/VSD_Squadron_FPGA_Mini_Research_Internship/blob/65e9f3a8f7bdcb2300f18f862c69f45673dbdd50/TASK_1_LED_BLUE/GPIO_assignment_Screenshot%20.png)
+
+From the above image, we could map the GPIOs RGB0,RGB1,RGB2 to pins 
 
 
 
