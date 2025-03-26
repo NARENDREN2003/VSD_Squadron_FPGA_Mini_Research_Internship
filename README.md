@@ -9,12 +9,15 @@ This repo display projects and tasks that are done to understand the working of 
 The **VSD Squadron Mini FPGA** is a beginner-friendly **open-source FPGA board** designed for rapid prototyping and digital system implementation.It is designed completely by VLSI System Design (VSD),an educational organization in the field of semiconductors and VLSI.
 
 ### **Board Specifications**
-🔹 **FPGA Chip**: Lattice UltraPlus ICE40UP5K (5.3K LUTs)  
-🔹 **Memory**: 1MB SPRAM, 120Kb DPRAM, 4MB SPI Flash  
-🔹 **General Purpose I/O (GPIO)**: 32 accessible pins  
-🔹 **Connectivity**: FTDI FT232H USB-to-SPI for programming & debugging  
-🔹 **Multipliers**: 8 DSP multipliers for arithmetic operations  
-**[View the Datasheet](https://www.vlsisystemdesign.com/wp-content/uploads/2025/01/VSDSquadronFMDatasheet.pdf)** 
+ | **Features**|**Specfications**|
+ |--------------|------------------|
+ |**FPGA Chip** |*Lattice UltraPlus ICE40UP5K (5.3K LUTs)* | 
+ |**Memory**|*1MB SPRAM, 120Kb DPRAM, 4MB SPI Flash*| 
+ |**General Purpose I/O (GPIO)**|*32 accessible pins*|  
+ |**Connectivity**|*FTDI FT232H USB-to-SPI for programming & debugging*|  
+ |**Multipliers**|*8 DSP multipliers for arithmetic operations*|
+ 
+**[View the Datasheet](https://www.vlsisystemdesign.com/wp-content/uploads/2025/01/VSDSquadronFMDatasheet.pdf)**
 **For more details, visit the official website:** [VSD Official Page](https://www.vlsisystemdesign.com/vsdsquadronfm/)  
 
 ---
@@ -79,8 +82,9 @@ The above command removes any previous bitstream files.
 
 To ** BUILD AN FPGA **, run:
 
-    sudo make build
-
+```sh
+sudo make build
+```
 ***
 
 
@@ -89,7 +93,7 @@ To ** BUILD AN FPGA **, run:
 Once the bitstream is built, upload it to the FPGA using by the below command:
 
 ```sh
-    sudo make flash
+sudo make flash
 ```
 This command programs the **VSD Squadron Mini FPGA board**.
 
