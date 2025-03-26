@@ -1,4 +1,4 @@
-# VSD_Squadron_FPGA_Mini_Research_Internship_2025
+# VSD_Squadron_FPGA_Mini_Research_Internship
 This repo display projects and tasks that are done to understand the working of the VSD Squadron Mini FGPA board.
 ## VSD Squadron FPGA Mini
 <img src="https://github.com/user-attachments/assets/a8bb3868-4454-48b9-9a43-8db6f9467c5c" alt="VSDSquadron mini fpga" width="400"/>
