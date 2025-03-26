@@ -14,6 +14,8 @@ This task gives the idea of using gpio from the FPGA Board
 |Clean Previous Builds|```sudo make clean```|
 |Execute below command to build the FPGA|```sudo make build```
 |Flash the FPGA|```sudo make flash```|
+## PCF File Mapping with FPGA Board
+Referring to VSD Squadron FPGA Mini Datasheet 
 
 
 
