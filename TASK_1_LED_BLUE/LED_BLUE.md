@@ -15,7 +15,14 @@ This task gives the idea of using gpio from the FPGA Board
 |Execute below command to build the FPGA|```sudo make build```
 |Flash the FPGA|```sudo make flash```|
 ## PCF File Mapping with FPGA Board
-Referring to VSD Squadron FPGA Mini Datasheet 
+### PCF File
+    set_io  led_red	39
+    set_io  led_blue 40
+    set_io  led_green 41
+    set_io  hw_clk 20
+    set_io  testwire 17
+Referring to VSD Squadron FPGA Mini Datasheet.We could understand the PCF File.
+![image]()
 
 
 
