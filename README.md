@@ -52,7 +52,7 @@ Each project has its own directory. Navigate to the project you want to work on:
 Example:
 
     
-    cd TASK_1_LED BLUE
+    cd TASK_1_LED_BLUE
 
 To view available files:
 
