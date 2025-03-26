@@ -1,6 +1,6 @@
 # VSD_Squadron_FPGA_Mini_Research_Internship_2025
 This repo display projects and tasks that are done to understand the working of the VSD Squadron Mini FGPA board.
-## 
+## VSD Squadron FPGA Mini
 <img src="https://github.com/user-attachments/assets/a8bb3868-4454-48b9-9a43-8db6f9467c5c" alt="VSDSquadron mini fpga" width="400"/>
    
 
@@ -18,15 +18,14 @@ The **VSD Squadron Mini FPGA** is a beginner-friendly **open-source FPGA board**
 **For more details, visit the official website:** [VSD Official Page](https://www.vlsisystemdesign.com/vsdsquadronfm/)  
 
 ---
-
-## 🔹 Projects Overview
 ## 🔹 FPGA Projects Overview
 
 This repository contains **five FPGA-based projects**, each focusing on different aspects of **digital design, communication, and real-time processing** using the **VSD Squadron Mini FPGA**.
 
-|  | Project Name                                         | Description |
-|----|------------------------------------------------------|-------------|
-| 1 | [LED BLUE]()                  | FPGA LED BLUE TESTING  |
+|    |                    Project Name                                         | Description        |
+|----|-------------------------------------------------------------------------|--------------------|
+| 1 | [*Led Blue*]()                                                           | FPGA LED BLUE TESTING|
+| 2 | [*Uart Loopback*]()                                                      |                  |
 
 
 ---
