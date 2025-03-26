@@ -27,7 +27,7 @@ This repository contains **five FPGA-based projects**, each focusing on differen
 
 |    |                    Project Name                                         | Description        |
 |----|-------------------------------------------------------------------------|--------------------|
-| 1 | [*Led Blue*]()                                                           | FPGA Led Blue Testing|
+| 1 | [*Led Blue*](https://github.com/NARENDREN2003/VSD_Squadron_FPGA_Mini_Research_Internship/tree/main/TASK_1_LED_BLUE)| FPGA Led Blue Testing|
 | 2 | [*Uart Loopback*]()                                                      |                  |
 
 
