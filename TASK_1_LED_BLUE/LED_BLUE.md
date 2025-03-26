@@ -25,7 +25,7 @@ Referring to VSD Squadron FPGA Mini Datasheet.We could understand the PCF File.
 
 ![image](https://github.com/NARENDREN2003/VSD_Squadron_FPGA_Mini_Research_Internship/blob/7757736328a0c7f9e4fef4faee4fef58f1e9202b/TASK_1_LED_BLUE/GPIO%20PIN%20ASSIGNMENT.png)
 
-From the above image, we could map the LED Fuction RGB0,RGB1,RGB2 to pins 
+From the above image, we could map the LED Fuction RGB0,RGB1,RGB2 to pins 39,40,41  respectively. 
 
 
 
