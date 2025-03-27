@@ -1,7 +1,7 @@
 # **SUMMARY**
 ## TASK-1 LED BLUE TESTING
 
-This task gives the idea of using gpio from the FPGA Board
+This task gives the idea of using LED and RGB Driver in the FPGA Board
 
 ![image](https://github.com/NARENDREN2003/VSD_Squadron_FPGA_Mini_Research_Internship/blob/5887bcd90075abacac00760fd1bd77572cdda0c0/TASK_1_LED_BLUE/VSD%20FM%20Board.png)
 ## Steps to Implement Task-1
@@ -77,7 +77,7 @@ Refer
     “0b001111” = 16 mA for Full Mode; 8 mA for Half Mode 
     “0b011111” = 20 mA for Full Mode; 10 mA for Half Mode 
     “0b111111” = 24 mA for Full Mode; 12 mA for Half Mode 
- In the Verilog Code [led_blue]() ,4mA Full Current Mode is used.
+ In the Verilog Code [led_blue](https://github.com/NARENDREN2003/VSD_Squadron_FPGA_Mini_Research_Internship/blob/main/TASK_1_LED_BLUE/LED_BLUE/top.v) ,4mA Full Current Mode is used.
  
 
 
