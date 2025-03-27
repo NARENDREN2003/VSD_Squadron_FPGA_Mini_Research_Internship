@@ -245,7 +245,7 @@ This module **implements a UART transmitter** and **RGB LED controller** using:
 - **Changes LED color based on UART activity**.
 
 ---
-# **2.UART LOOPBACK Block Diagram**
+# **UART LOOPBACK Block Diagram**
 
 ## **What is UART?**
 **UART (Universal Asynchronous Receiver-Transmitter)** is a serial communication protocol used for **asynchronous data transfer** between devices. It does not require a separate clock signal; instead, it uses a **baud rate** to synchronize communication.
@@ -286,8 +286,8 @@ assign uarttx = uartrx;
  - This eliminates the need for external connections during testing.
  - Helps debug UART transmission in an FPGA-based system.
 
-# **3.UART Loopback Circuit Diagram**
-![Circuit Diagram]()
+# **UART Loopback Circuit Diagram**
+![Circuit Diagram](https://github.com/NARENDREN2003/VSD_Squadron_FPGA_Mini_Research_Internship/blob/86b958cdadc723d7590eef75a0361e684ee1a21f/TASK_2_UART_LOOPBACK/CIRCUIT%20DIAGRAM.jpg)
 
 ## **🔹 Key Components**
 - **FPGA (VSD Squadron Mini):** Handles UART communication & LED control.
@@ -350,11 +350,5 @@ CTRL + A, then CTRL + X
 | **FTDI TX**   | Pin 14       | Sends data to FPGA RX            |
 | **FTDI RX**   | Pin 13       | Receives data from FPGA TX       |
 | **RGB LEDs**  | PWM Output   | Controlled via UART signals      |
-
-
-##
-
-
-
 ## 5.Demo video
 [Demo Video](https://github.com/user-attachments/assets/60dddb70-100b-40ed-82e3-6ac9a7fb49c8)
