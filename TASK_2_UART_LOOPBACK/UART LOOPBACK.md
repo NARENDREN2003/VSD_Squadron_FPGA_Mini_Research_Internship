@@ -193,8 +193,7 @@ To exit:
    - Choose a file to save the log
    - Stop logging with Ctrl + A, then L again
 
-
-
+------
 ### **UART LOOPBACK Implementation**
 #### **How It Works**
 - Instead of using a **separate UART receiver (`uart_rx_8n1`)**, the design **directly loops back the received signal (`uartrx`) to `uarttx`**.
@@ -304,7 +303,7 @@ assign uarttx = uartrx;
 
 ## Clone & Setup Repository
 ```bash
-git clone https://github.com/Skandakm29/VsdSquadron_mini_fpga_uart_loopback.git
+git clone 
 cd "VsdSquadron_mini_fpga_uart_loopback"
 ```
 Build & Flash FPGA Bitstream
