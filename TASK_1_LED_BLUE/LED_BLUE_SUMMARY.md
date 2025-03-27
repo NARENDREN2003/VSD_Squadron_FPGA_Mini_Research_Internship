@@ -29,7 +29,7 @@ From the above image, we could map the LED Fuction RGB0,RGB1,RGB2 to pins 39,40,
 ## Understanding the RGB Driver in Verilog Code
     SB_RGBA_DRV RGB_DRIVER
     (
-       .RGBLEDEN(1'b1), //RGBLED function is enabled by assigning logic 1.ie, 1'b1 
+       .RGBLEDEN(1'b1), //Input to the RGB Driver, Enable Control for RGB LED, Active HIGH.
        .RGB0PWM (1'b0), // Red light is turned OFF by assiging logic 0. ie, 1'b0 
        .RGB1PWM (1'b0), // Green light  is turned OFF by assiging logic 0. ie, 1'b0
        .RGB2PWM (1'b1), // Blue light is turned ON by assigning logic 1. ie, 1'b1 
