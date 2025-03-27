@@ -287,7 +287,7 @@ assign uarttx = uartrx;
  - Helps debug UART transmission in an FPGA-based system.
 
 # **3.UART Loopback Circuit Diagram**
-![Circuit Diagram](https://github.com/Skandakm29/VsdSquadron_mini_fpga_uart_loopback/blob/main/circuit_diagram.png)
+![Circuit Diagram]()
 
 ## **🔹 Key Components**
 - **FPGA (VSD Squadron Mini):** Handles UART communication & LED control.
