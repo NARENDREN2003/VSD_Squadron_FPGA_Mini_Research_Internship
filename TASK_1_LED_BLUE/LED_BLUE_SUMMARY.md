@@ -14,6 +14,7 @@ This task gives the idea of using gpio from the FPGA Board
 |Clean Previous Builds|```sudo make clean```|
 |Execute below command to build the FPGA|```sudo make build```|
 |Flash the FPGA|```sudo make flash```|
+
 ## PCF File Mapping with FPGA Board
 ### PCF File
     set_io  led_red	39
@@ -43,11 +44,41 @@ From the above image, we could map the LED Fuction RGB0,RGB1,RGB2 to pins 39,40,
     defparam RGB_DRIVER.RGB1_CURRENT = "0b000001";
     defparam RGB_DRIVER.RGB2_CURRENT = "0b000001";
 ![image](https://github.com/NARENDREN2003/VSD_Squadron_FPGA_Mini_Research_Internship/blob/722a9db7c2c57aefb30bfd592527f0a3a09b8e9a/TASK_1_LED_BLUE/LED%20COLOUR%20ASSIGNMENT.png)
- ### Code Mapping RGB DRIVER
- |Code                 | Explanation           |
+ ### Code Mapping RGB_DRIVER
+ |Code                 | Description          |
  |---------------------|-----------------------|
- |.RGBLEDEN(1'b1),| 
-
+ |.RGBLEDEN(1'b1),| Input to the RGB Driver, Enable Control for RGB LED, Active HIGH|
+ |.RGB0PWM (1'b0),|Input to the RGB Driver, pulse width modulated control signal for controlling RGB0 output.Connects to Embedded PWM IP or      FPGA logic, Active LOW .|
+ |.RGB1PWM (1'b0)|Input to the RGB Driver, pulse width modulated control signal for controlling RGB1 output. Connects to Embedded  PWM IP or FPGA logic, Active LOW |
+ |.RGB2PWM (1'b1),|Input to the RGB Driver, pulse width modulated control signal for controlling RGB2 output. Connects to Embedded PWM IP or FPGA logic, Active HIGH|
+ |.CURREN  (1'b1 ),|Input enabling mixed signal control block to supply reference current to RGB driver. Enabling the mixed signal control block takes 100 μs to reach a stable reference current value.|
+ |.RGB0    (led_red),|Open-drain output of the RGB Driver connected to the device pin for RED LED|
+ |.RGB1    (led_green),|Open-drain output of the RGB Driver connected to the device pin for GREEN LED|
+ |.RGB2    (led_blue)|Open-drain output of the RGB Driver connected to the device pin for BLUE LED |
+ |defparam RGB_DRIVER.RGB0_CURRENT = "0b000001";|Led red of Current 4 mA in Full Mode|
+ |defparam RGB_DRIVER.RGB1_CURRENT = "0b000001";|Led green of Current 4 mA in Full Mode|
+ |defparam RGB_DRIVER.RGB2_CURRENT = "0b000001";|Led blue of Current 4mA in Full Mode |
+ 
+Refer  
+## SB_RGBA_DRV Attribute Description 
+    The SB_RGBA_DRV primitive contains the following parameter and their default values: 
+    Parameter CURRENT_MODE = “0b0”; 
+    Parameter RGB0_CURRENT = “0b000000”; 
+    Parameter RGB1_CURRENT = “0b000000”; 
+    Parameter RGB2_CURRENT = “0b000000”; 
+    Parameter values: 
+    “0b0” = Full Current Mode 
+    “0b1” = Half Current Mode 
+    “0b000000” = 0mA. // Set this value to use the associated SB_IO_OD instance at RGB LED 
+    location. 
+    “0b000001” = 4 mA for Full Mode; 2 mA for Half Mode 
+    “0b000011” = 8 mA for Full Mode; 4 mA for Half Mode 
+    “0b000111” = 12 mA for Full Mode; 6mA for Half Mode 
+    “0b001111” = 16 mA for Full Mode; 8 mA for Half Mode 
+    “0b011111” = 20 mA for Full Mode; 10 mA for Half Mode 
+    “0b111111” = 24 mA for Full Mode; 12 mA for Half Mode 
+ In the Verilog Code [led_blue]() ,4mA Full Current Mode is used.
+ 
 
 
 
