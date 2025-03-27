@@ -261,7 +261,7 @@ This module **implements a UART transmitter** and **RGB LED controller** using:
  **Self-Testing** → Helps verify UART functionality in an FPGA or microcontroller.
 
 ## **UART Loopback Block Diagram**
-![UART Loopback]()
+![UART Loopback](https://github.com/NARENDREN2003/VSD_Squadron_FPGA_Mini_Research_Internship/blob/6f9a53abb44dcfa19269b258651a8765581b1433/TASK_2_UART_LOOPBACK/DIRECT%20CONNECTION.jpg)
 
 ## **Explanation of Each Block**
 
