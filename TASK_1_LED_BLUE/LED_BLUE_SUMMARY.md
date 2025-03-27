@@ -59,7 +59,7 @@ From the above image, we could map the LED Fuction RGB0,RGB1,RGB2 to pins 39,40,
  |```defparam RGB_DRIVER.RGB1_CURRENT = "0b000001";```|Led green of Current 4 mA in Full Mode|
  |```defparam RGB_DRIVER.RGB2_CURRENT = "0b000001";```|Led blue of Current 4mA in Full Mode |
  
-Refer [](https://github.com/NARENDREN2003/VSD_Squadron_FPGA_Mini_Research_Internship/blob/f3ae70937e72c97f05478789337766fa98b225af/TASK_1_LED_BLUE/iCE40%20UltraPlus%20RGB%20Driver.pdf) 
+Refer [iCE40 UltraPlus RGB Driver.pdf](https://github.com/NARENDREN2003/VSD_Squadron_FPGA_Mini_Research_Internship/blob/f3ae70937e72c97f05478789337766fa98b225af/TASK_1_LED_BLUE/iCE40%20UltraPlus%20RGB%20Driver.pdf) 
 ## SB_RGBA_DRV Attribute Description 
     The SB_RGBA_DRV primitive contains the following parameter and their default values: 
     Parameter CURRENT_MODE = “0b0”; 
