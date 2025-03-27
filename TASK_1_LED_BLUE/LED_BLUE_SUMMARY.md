@@ -92,8 +92,15 @@ The above line of code describes the High Frequency  Internal Oscillator is Enab
 |CLKHFPU|	1'b1	|Enables the oscillator power-up|
 |CLKHFEN|   1'b1	|Enables the oscillator output|
 |CLKHF  |	int_osc |	Internal clock signal|
+## Understanding Counter Code
+       reg  [27:0] frequency_counter_i;
+       assign testwire = frequency_counter_i[5];//Bit 5 (frequency_counter_i[5]) is assigned to testwire, generating a 375 kHz square wave 
+       always @(posedge int_osc) 
+         begin
+           frequency_counter_i <= frequency_counter_i + 1'b1; //Acts as a free-running counter that continuously increments.
+         end
+ The above Verilog code implements a frequency counter using a 28-bit register. It increments on every positive edge of the internal oscillator (int_osc) and outputs one of its bits (frequency_counter_i[5]) as a test signal.Bit 5 toggles at int_osc / 2^5 = 12 MHz / 32 = 375 kHz(square wave).
 
- 
 
 
 
