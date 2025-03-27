@@ -34,9 +34,9 @@ From the above image, we could map the LED Fuction RGB0,RGB1,RGB2 to pins 39,40,
        .RGB1PWM (1'b0), // Green light  is turned OFF by assiging logic 0 ie 1'b0
        .RGB2PWM (1'b1), // Blue light is turned ON by assigning logic 1 ie 1'b1 
        .CURREN  (1'b1 ),
-       .RGB0    (led_red                                       ), //Actual Hardware connection
-       .RGB1    (led_green                                       ),
-       .RGB2    (led_blue                                        )
+       .RGB0    (led_red), //Actual Hardware connection .([Refer to FPGA Datasheet]())
+       .RGB1    (led_green),
+       .RGB2    (led_blue)
     );
     defparam RGB_DRIVER.RGB0_CURRENT = "0b000001";
     defparam RGB_DRIVER.RGB1_CURRENT = "0b000001";
