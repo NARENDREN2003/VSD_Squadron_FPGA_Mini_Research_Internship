@@ -29,12 +29,13 @@ From the above image, we could map the LED Fuction RGB0,RGB1,RGB2 to pins 39,40,
 ## Understanding the RGB Driver in Verilog Code
     SB_RGBA_DRV RGB_DRIVER
     (
-       .RGBLEDEN(1'b1), //Input to the RGB Driver, Enable Control for RGB LED, Active HIGH.
-       .RGB0PWM (1'b0), // Red light is turned OFF by assiging logic 0. ie, 1'b0 
-       .RGB1PWM (1'b0), // Green light  is turned OFF by assiging logic 0. ie, 1'b0
-       .RGB2PWM (1'b1), // Blue light is turned ON by assigning logic 1. ie, 1'b1 
+       .RGBLEDEN(1'b1), 
+       .RGB0PWM (1'b0), 
+       .RGB1PWM (1'b0),
+       .RGB2PWM (1'b1), 
        .CURREN  (1'b1 ),
-       .RGB0    (led_red), //Actual Hardware connection (Refer to below table ))
+       //Actual Hardware connection (Refer to below table ))
+       .RGB0    (led_red), 
        .RGB1    (led_green),
        .RGB2    (led_blue)
     );
@@ -42,6 +43,10 @@ From the above image, we could map the LED Fuction RGB0,RGB1,RGB2 to pins 39,40,
     defparam RGB_DRIVER.RGB1_CURRENT = "0b000001";
     defparam RGB_DRIVER.RGB2_CURRENT = "0b000001";
 ![image](https://github.com/NARENDREN2003/VSD_Squadron_FPGA_Mini_Research_Internship/blob/722a9db7c2c57aefb30bfd592527f0a3a09b8e9a/TASK_1_LED_BLUE/LED%20COLOUR%20ASSIGNMENT.png)
+ ### Code Mapping RGB DRIVER
+ |Code                 | Explanation           |
+ |---------------------|-----------------------|
+ |.RGBLEDEN(1'b1),| 
 
 
 
