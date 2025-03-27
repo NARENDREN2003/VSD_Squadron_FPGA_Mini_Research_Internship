@@ -47,17 +47,17 @@ From the above image, we could map the LED Fuction RGB0,RGB1,RGB2 to pins 39,40,
  ### Code Mapping RGB_DRIVER
  |Code                 | Description          |
  |---------------------|-----------------------|
- |.RGBLEDEN(1'b1),| Input to the RGB Driver, Enable Control for RGB LED, Active HIGH|
- |.RGB0PWM (1'b0),|Input to the RGB Driver, pulse width modulated control signal for controlling RGB0 output.Connects to Embedded PWM IP or      FPGA logic, Active LOW .|
- |.RGB1PWM (1'b0)|Input to the RGB Driver, pulse width modulated control signal for controlling RGB1 output. Connects to Embedded  PWM IP or FPGA logic, Active LOW |
- |.RGB2PWM (1'b1),|Input to the RGB Driver, pulse width modulated control signal for controlling RGB2 output. Connects to Embedded PWM IP or FPGA logic, Active HIGH|
- |.CURREN  (1'b1 ),|Input enabling mixed signal control block to supply reference current to RGB driver. Enabling the mixed signal control block takes 100 μs to reach a stable reference current value.|
- |.RGB0    (led_red),|Open-drain output of the RGB Driver connected to the device pin for RED LED|
- |.RGB1    (led_green),|Open-drain output of the RGB Driver connected to the device pin for GREEN LED|
- |.RGB2    (led_blue)|Open-drain output of the RGB Driver connected to the device pin for BLUE LED |
- |defparam RGB_DRIVER.RGB0_CURRENT = "0b000001";|Led red of Current 4 mA in Full Mode|
- |defparam RGB_DRIVER.RGB1_CURRENT = "0b000001";|Led green of Current 4 mA in Full Mode|
- |defparam RGB_DRIVER.RGB2_CURRENT = "0b000001";|Led blue of Current 4mA in Full Mode |
+ |```.RGBLEDEN(1'b1),```| Input to the RGB Driver, Enable Control for RGB LED, Active HIGH|
+ |```.RGB0PWM (1'b0),```|Input to the RGB Driver, pulse width modulated control signal for controlling RGB0 output.Connects to Embedded PWM IP or FPGA logic, Active LOW .|
+ |```.RGB1PWM (1'b0),```|Input to the RGB Driver, pulse width modulated control signal for controlling RGB1 output. Connects to Embedded  PWM IP or FPGA logic, Active LOW |
+ |```.RGB2PWM (1'b1),```|Input to the RGB Driver, pulse width modulated control signal for controlling RGB2 output. Connects to Embedded PWM IP or FPGA logic, Active HIGH|
+ |```.CURREN  (1'b1 ),```|Input enabling mixed signal control block to supply reference current to RGB driver. Enabling the mixed signal control block takes 100 μs to reach a stable reference current value.|
+ |```.RGB0    (led_red),```|Open-drain output of the RGB Driver connected to the device pin for RED LED|
+ |```.RGB1    (led_green),```|Open-drain output of the RGB Driver connected to the device pin for GREEN LED|
+ |```.RGB2    (led_blue)```|Open-drain output of the RGB Driver connected to the device pin for BLUE LED |
+ |```defparam RGB_DRIVER.RGB0_CURRENT = "0b000001";```|Led red of Current 4 mA in Full Mode|
+ |```defparam RGB_DRIVER.RGB1_CURRENT = "0b000001";```|Led green of Current 4 mA in Full Mode|
+ |```defparam RGB_DRIVER.RGB2_CURRENT = "0b000001";```|Led blue of Current 4mA in Full Mode |
  
 Refer  
 ## SB_RGBA_DRV Attribute Description 
@@ -78,6 +78,21 @@ Refer
     “0b011111” = 20 mA for Full Mode; 10 mA for Half Mode 
     “0b111111” = 24 mA for Full Mode; 12 mA for Half Mode 
  In the Verilog Code [led_blue](https://github.com/NARENDREN2003/VSD_Squadron_FPGA_Mini_Research_Internship/blob/main/TASK_1_LED_BLUE/LED_BLUE/top.v) ,4mA Full Current Mode is used.
+ ## Understanding Internal Oscillator Code
+    ```SB_HFOSC #(.CLKHF_DIV ("0b10"))````
+        u_SB_HFOSC (
+                    .CLKHFPU(1'b1),
+                    .CLKHFEN(1'b1),
+                    .CLKHF(int_osc)
+                    );```
+The above line of code describes the High Frequency  Internal Oscillator is Enabled 
+|Parameter|	Value|Description|
+|---------|------|-----------|
+|CLKHF_DIV|	"0b10"|	Sets output frequency to 12 MHz|
+|CLKHFPU|	1'b1	|Enables the oscillator power-up|
+|CLKHFEN|   1'b1	|Enables the oscillator output|
+|CLKHF  |	int_osc |	Internal clock signal|
+
  
 
 
