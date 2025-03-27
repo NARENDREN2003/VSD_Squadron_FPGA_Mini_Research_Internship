@@ -303,8 +303,10 @@ assign uarttx = uartrx;
 
 ## Clone & Setup Repository
 ```bash
-git clone 
-cd "VsdSquadron_mini_fpga_uart_loopback"
+git clone https://github.com/NARENDREN2003/VSD_Squadron_FPGA_Mini_Research_Internship.git
+cd VSD_Squadron_FPGA_Mini_Research_Internship
+cd TASK_2_UART_LOOPBACK
+cd UART_LOOPBACK
 ```
 Build & Flash FPGA Bitstream
 ###  Build the Bitstream
@@ -334,14 +336,6 @@ hello           | hheelllloo
 
 Exit Terminal
 CTRL + A, then CTRL + X
-### Troubleshooting
-
-1. Check FPGA pin connections.
-
-2. Ensure baud rate is set to 9600.
-
-3. Verify FTDI cable is properly connected.
-
 |               |              |                                  |
 | ------------- | ------------ | -------------------------------- |
 | **Component** | **FPGA Pin** | **Function**                     |
@@ -350,4 +344,4 @@ CTRL + A, then CTRL + X
 | **FTDI RX**   | Pin 13       | Receives data from FPGA TX       |
 | **RGB LEDs**  | PWM Output   | Controlled via UART signals      |
 ## 5.Demo video
-[Demo Video](https://github.com/user-attachments/assets/60dddb70-100b-40ed-82e3-6ac9a7fb49c8)
+[Demo Video]()
