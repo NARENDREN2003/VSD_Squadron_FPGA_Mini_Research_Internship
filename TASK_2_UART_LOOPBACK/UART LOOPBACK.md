@@ -320,13 +320,6 @@ make build
 sudo make flash
 Uploads the bitstream to the FPGA.
 ```
-### **UART Loopback Testing**
-Open Serial Terminal
-```bash
-sudo picocom -b 9600 /dev/ttyUSB0 --echo
-```
- Send Data & Verify Output
-
 # Expected Output:
 
 Sent Data (TX)   | Received Data (RX)
@@ -343,5 +336,6 @@ CTRL + A, then CTRL + X
 | **FTDI TX**   | Pin 14       | Sends data to FPGA RX            |
 | **FTDI RX**   | Pin 13       | Receives data from FPGA TX       |
 | **RGB LEDs**  | PWM Output   | Controlled via UART signals      |
-## 5.Demo video
-[Demo Video]()
+
+## .Demo video
+[Demo Video](https://github.com/NARENDREN2003/VSD_Squadron_FPGA_Mini_Research_Internship/blob/1dae3137cd241796e82d59d2559a36eabbcdf184/TASK_2_UART_LOOPBACK/UART_LOOPBACK_VIDEO.mp4)
