@@ -195,20 +195,18 @@ To exit:
 
 
 
-### **UART Loopback Implementation**
+### **UART LOOPBACK Implementation**
 #### **How It Works**
 - Instead of using a **separate UART receiver (`uart_rx_8n1`)**, the design **directly loops back the received signal (`uartrx`) to `uarttx`**.
 - This acts as a **wire-based echo loopback**, useful for **testing UART communication**.
 
 #### **Loopback Code in Verilog**
-```verilog
+```
 assign uarttx = uartrx;
 ```
 
-
-
 ## **RGB LED Driver (`SB_RGBA_DRV`)**
-```verilog
+```
 SB_RGBA_DRV RGB_DRIVER (
     .RGBLEDEN(1'b1),
     .RGB0PWM (uartrx),
@@ -247,7 +245,7 @@ This module **implements a UART transmitter** and **RGB LED controller** using:
 - **Changes LED color based on UART activity**.
 
 ---
-# **2.UART Loopback Block Diagram**
+# **2.UART LOOPBACK Block Diagram**
 
 ## **What is UART?**
 **UART (Universal Asynchronous Receiver-Transmitter)** is a serial communication protocol used for **asynchronous data transfer** between devices. It does not require a separate clock signal; instead, it uses a **baud rate** to synchronize communication.
@@ -260,7 +258,7 @@ This module **implements a UART transmitter** and **RGB LED controller** using:
  **No External Hardware Required** → TX is internally connected to RX.  
  **Self-Testing** → Helps verify UART functionality in an FPGA or microcontroller.
 
-## **UART Loopback Block Diagram**
+## **UART LOOPBACK Block Diagram**
 ![UART Loopback](https://github.com/NARENDREN2003/VSD_Squadron_FPGA_Mini_Research_Internship/blob/6f9a53abb44dcfa19269b258651a8765581b1433/TASK_2_UART_LOOPBACK/DIRECT%20CONNECTION.jpg)
 
 ## **Explanation of Each Block**
@@ -278,15 +276,12 @@ This module **implements a UART transmitter** and **RGB LED controller** using:
 - Reads the **serial data from TX** via the direct connection.
 - Reconstructs the original **8-bit parallel data**.
 - This allows **testing UART transmission without an external receiver**.
-
 ---
-
 ## **Loopback Implementation in Verilog**
 ### **Direct Connection Logic**
-```verilog
+```
 assign uarttx = uartrx;
 ```
-
 - Any data sent on uarttx is instantly received on uartrx.
  - This eliminates the need for external connections during testing.
  - Helps debug UART transmission in an FPGA-based system.
